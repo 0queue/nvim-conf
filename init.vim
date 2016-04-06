@@ -17,7 +17,6 @@ set autoindent
 " colors!
 syntax on
 set background=dark
-colorscheme desert " desert is nice, and default!
 
 " for the integrated terminal
 tnoremap <Esc> <C-\><C-n>
@@ -29,3 +28,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 execute pathogen#infect('bundles/{}')
+
+" bundle config
+colorscheme base16-google
