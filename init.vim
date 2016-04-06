@@ -18,6 +18,9 @@ set autoindent
 syntax on
 set background=dark
 
+" recognize .zsh files
+au BufNewFile,BufRead *.zsh-theme setlocal filetype=zsh
+
 " for the integrated terminal
 tnoremap <Esc> <C-\><C-n>
 
