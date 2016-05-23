@@ -7,3 +7,6 @@
 [submodule "bundles/vim-nix"]
 	path = bundles/vim-nix
 	url = https://github.com/LnL7/vim-nix.git
+[submodule "bundles/vim-vala"]
+	path = bundles/vim-vala
+	url = https://github.com/tkztmk/vim-vala
