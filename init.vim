@@ -18,6 +18,10 @@ set autoindent
 syntax on
 set background=dark
 
+" folding!
+set foldmethod=syntax
+set foldlevelstart=99
+
 " recognize .zsh files
 au BufNewFile,BufRead *.zsh-theme setlocal filetype=zsh
 
