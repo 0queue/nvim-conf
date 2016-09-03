@@ -17,6 +17,7 @@ set autoindent
 " colors!
 syntax on
 set background=dark
+set cursorline
 
 " folding!
 set foldmethod=syntax
@@ -38,3 +39,4 @@ execute pathogen#infect('bundles/{}')
 
 " bundle config
 colorscheme base16-google
+highlight MatchParen gui=bold guifg=lightgray guibg=gray
