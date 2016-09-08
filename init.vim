@@ -1,7 +1,7 @@
 " a simple neovim config
 
 " makes the colors work
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 
 filetype plugin indent on
 
