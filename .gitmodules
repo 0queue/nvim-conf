@@ -10,3 +10,6 @@
 [submodule "bundles/vim-vala"]
 	path = bundles/vim-vala
 	url = https://github.com/tkztmk/vim-vala
+[submodule "bundles/vim-gitgutter"]
+	path = bundles/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
