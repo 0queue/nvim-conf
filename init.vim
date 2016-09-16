@@ -35,6 +35,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" leader key stuff
+let mapleader=","
+noremap <Leader>/ :nohlsearch<Enter>
+
 execute pathogen#infect('bundles/{}')
 
 " bundle config
