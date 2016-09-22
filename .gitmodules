@@ -13,3 +13,6 @@
 [submodule "bundles/vim-gitgutter"]
 	path = bundles/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundles/vim-racer"]
+	path = bundles/vim-racer
+	url = https://github.com/racer-rust/vim-racer.git

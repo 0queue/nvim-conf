@@ -34,6 +34,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+set splitright
+set splitbelow
 
 " leader key stuff
 let mapleader=","
@@ -45,3 +47,10 @@ execute pathogen#infect('bundles/{}')
 colorscheme base16-google
 highlight MatchParen gui=bold guifg=lightgray guibg=gray
 set colorcolumn=80
+
+" racer config
+set hidden
+let g:racer_cmd = $HOME . "/.cargo/bin/racer"
+let $RUST_SRC_PATH = $HOME . "/rust/src/"
+" since double comma isn't too common
+inoremap <Leader><Leader> <C-x><C-o> 
