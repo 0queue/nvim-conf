@@ -51,6 +51,6 @@ set colorcolumn=80
 " racer config
 set hidden
 let g:racer_cmd = $HOME . "/.cargo/bin/racer"
-let $RUST_SRC_PATH = $HOME . "/rust/src/"
+let $RUST_SRC_PATH = $HOME . "/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 " since double comma isn't too common
 inoremap <Leader><Leader> <C-x><C-o> 
