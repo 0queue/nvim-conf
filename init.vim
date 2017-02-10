@@ -44,7 +44,7 @@ noremap <Leader>/ :nohlsearch<Enter>
 execute pathogen#infect('bundles/{}')
 
 " bundle config
-colorscheme base16-google
+colorscheme base16-google-dark
 highlight MatchParen gui=bold guifg=lightgray guibg=gray
 set colorcolumn=80
 
