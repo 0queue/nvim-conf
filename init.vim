@@ -29,6 +29,9 @@ au BufNewFile,BufRead *.zsh-theme setlocal filetype=zsh
 " for the integrated terminal
 tnoremap <Esc> <C-\><C-n>
 
+" disable mouse clicking
+set mouse-=a
+
 " pane navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
