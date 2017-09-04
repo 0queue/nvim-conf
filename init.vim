@@ -50,6 +50,7 @@ execute pathogen#infect('bundles/{}')
 colorscheme base16-google-dark
 highlight MatchParen gui=bold guifg=lightgray guibg=gray
 set colorcolumn=80
+let g:gutentags_enabled=0
 
 " racer config
 set hidden
