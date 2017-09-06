@@ -50,7 +50,20 @@ execute pathogen#infect('bundles/{}')
 colorscheme base16-google-dark
 highlight MatchParen gui=bold guifg=lightgray guibg=gray
 set colorcolumn=80
-let g:gutentags_enabled=0
+let g:gutentags_enabled_user_func='GutentagsShouldEnable'
+
+function! GutentagsShouldEnable(file)
+    let path =  fnamemodify(a:file, ':p:h')
+    try
+        let gutentags_root = gutentags#get_project_root(path)
+        if filereadable(gutentags_root . '/tags')
+            return 1
+        endif
+    catch
+    endtry
+
+    return 0
+endfunction
 
 " racer config
 set hidden
