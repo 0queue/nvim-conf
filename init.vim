@@ -44,6 +44,9 @@ set splitbelow
 let mapleader=","
 noremap <Leader>/ :nohlsearch<Enter>
 
+" better HTML
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
 execute pathogen#infect('bundles/{}')
 
 " bundle config
