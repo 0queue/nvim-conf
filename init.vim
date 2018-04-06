@@ -44,6 +44,12 @@ set splitbelow
 let mapleader=","
 noremap <Leader>/ :nohlsearch<Enter>
 
+" open file to last location
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+
 " better HTML
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
