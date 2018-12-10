@@ -46,7 +46,7 @@ noremap <Leader>/ :nohlsearch<Enter>
 
 " open file to last location
 autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \ if @% !~ '\.tmp$' && @% !~ 'COMMIT_EDITMSG$' && line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
 
