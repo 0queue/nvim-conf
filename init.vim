@@ -14,6 +14,12 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
+" change for yaml
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2
+
+" change for ruby
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
+
 " colors!
 syntax on
 set background=dark
@@ -25,6 +31,9 @@ set foldlevelstart=99
 
 " recognize .zsh files
 au BufNewFile,BufRead *.zsh-theme setlocal filetype=zsh
+
+" recognize Vagrantfiles
+au BufNewFile,BufRead Vagrantfile setlocal filetype=ruby
 
 " for the integrated terminal
 tnoremap <Esc> <C-\><C-n>
