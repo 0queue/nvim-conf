@@ -83,6 +83,8 @@ function! GutentagsShouldEnable(file)
     return 0
 endfunction
 
+let g:raku_unicode_abbrevs = 1
+
 " racer config
 set hidden
 let g:racer_cmd = $HOME . "/.cargo/bin/racer"

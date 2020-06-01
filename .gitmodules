@@ -19,3 +19,6 @@
 [submodule "bundles/Dockerfile.vim"]
 	path = bundles/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundles/vim-raku"]
+	path = bundles/vim-raku
+	url = https://github.com/Raku/vim-raku.git
